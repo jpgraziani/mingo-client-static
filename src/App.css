@@ -120,8 +120,8 @@ img {
 
 .btn-full:link,
 .btn-full:visited {
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid rgb(40, 40, 40);
+	color: rgb(50, 50, 50);
 }
 
 .btn-full:hover{
@@ -136,6 +136,6 @@ img {
 }
 
 .btn-med-blue:hover{
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid rgb(57, 57, 57);
+	color: rgb(45, 45, 45);
 }

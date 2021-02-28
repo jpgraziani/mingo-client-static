@@ -1,6 +1,6 @@
-import React from 'react';
-
-import Banner from '../components/Banner';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Banner from '../components/Banner'
 
 const HomePage = () => {
   return(
@@ -9,7 +9,7 @@ const HomePage = () => {
         <p>
           Mingo was inspired after the birth of my daughter when I needed to constantly find new activities and projects to do with her to keep her mind stimulated and learning.  I always found myself reaching out to friends and family to get new ideas for fun projects and activities.
         </p>
-        <button>contact</button>
+        <Link to='./contact' className='btns btn-full'>contact</Link>
       </Banner>
 
       <Banner title={'community by way of exploring'} />
@@ -20,14 +20,14 @@ const HomePage = () => {
 
           Come explore and see what's good.
         </p>
-        <button>activities</button>
+        <Link to='./activities' className='btns btn-full'>activities</Link>
       </Banner>
 
       <Banner title={'Explore Color Me Prints'} >
         <p>
           We believe it's never too early to introduce kids to art. To get started, download our free activity sheets from the Mingo WorkShop, and help your kids to create crazy, silly, happy art.
         </p>
-        <button>prints</button>
+        <Link to='./prints' className='btns btn-full'>prints</Link>
       </Banner>
      
     </section>
