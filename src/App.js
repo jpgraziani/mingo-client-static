@@ -3,6 +3,9 @@ import { Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import HomePage from './pages/HomePage'
 import ActivityList from './pages/ActivityList'
+import SelectedActivityPage from './pages/SelectedActivityPage'
+import PrintsPage from './pages/PrintsPage'
+import ContactPage from './pages/ContactPage'
 import Footer from './components/Footer'
 import ApiContext from './ApiContext'
 import Store from './data';
@@ -23,6 +26,9 @@ class App extends React.Component {
       <Fragment>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/activities' component={ActivityList} />
+        <Route exact path='/activity/:activityId' component={SelectedActivityPage} />
+        <Route exact path='/prints' component={PrintsPage} />
+        <Route exact path='/contact' component={ContactPage} />
       </Fragment>
     );
   }

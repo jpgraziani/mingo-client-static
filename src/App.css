@@ -44,6 +44,10 @@ body {
 /*  GLOBAL STYLES */
 
 /* ---------------------------------- */
+main {
+	padding: 0 2rem;
+}
+
 .container {
 	max-width: 1200px;
 	width: 100%;
@@ -120,4 +124,8 @@ img {
 .btn-med-blue:hover{
 	border: 2px solid rgb(57, 57, 57);
 	color: rgb(45, 45, 45);
+}
+
+a:hover {
+	color: grey;
 }

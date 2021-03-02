@@ -2,6 +2,7 @@ import React from 'react'
 
 import ActivityCard from '../components/ActivityCard'
 import ApiContext from '../ApiContext'
+import './ActivityList.css'
 
 export default class ActivityList extends React.Component {
 
@@ -12,9 +13,9 @@ export default class ActivityList extends React.Component {
     return (
       <section>
         <div>
-          <ul>
+          <ul className='activities-list'>
             {activities.map((activity, idx) => 
-              <li key={idx + activity.id}>
+              <li key={idx + activity.id} className='activity-item'>
                 <ActivityCard 
                   id={activity.id}
                   name={activity.name}
