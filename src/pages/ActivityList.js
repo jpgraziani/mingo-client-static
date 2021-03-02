@@ -1,25 +1,27 @@
 import React from 'react'
 
-import Card from '../components/Card'
-import Store from '../data'
+import ActivityCard from '../components/ActivityCard'
+import ApiContext from '../ApiContext'
 
 export default class ActivityList extends React.Component {
-  state = {
-    activities: []
-  }
 
-  componentDidMount() {
-    this.setState({
-      activities: Store
-    })
-  }
+ static contextType = ApiContext;
 
   render() {
+    const { activities=[] } = this.context
     return (
       <section>
         <div>
           <ul>
-            <li><Card /></li>
+            {activities.map((activity, idx) => 
+              <li key={idx + activity.id}>
+                <ActivityCard 
+                  id={activity.id}
+                  name={activity.name}
+                  date={activity.date}
+                />
+              </li>
+            )}
           </ul>
         </div>
       </section>
