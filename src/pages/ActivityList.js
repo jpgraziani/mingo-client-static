@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import ActivityCard from '../components/ActivityCard'
 import ApiContext from '../ApiContext'
 import './ActivityList.css'
@@ -12,6 +12,7 @@ export default class ActivityList extends React.Component {
     const { activities=[] } = this.context
     return (
       <section>
+        <Link to='/add-activity' className='btns btn-full'>Add Activity</Link>
         <div>
           <ul className='activities-list'>
             {activities.map((activity, idx) => 

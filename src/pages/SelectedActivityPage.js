@@ -22,7 +22,7 @@ export default class SelectedActivityPage extends React.Component {
             </section>
             <section className='desc'>
               <hr />
-              <h3>Supplies Needed</h3>
+              <h3>Supplies</h3>
               {activity.supplies}
             </section>
             <section>

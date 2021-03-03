@@ -8,14 +8,13 @@ export default  class NavBar extends React.Component {
     return (
       <header className='container'>
         <section className='nav-container'>
-          
           <nav role='navigation' className='top-navigation'>
             <div className='logo-text'>
               <Link to='/'><h1>mingo</h1></Link>
             </div>
-            <Link to='/'>contact</Link>
-            <Link to='/'>activities</Link>
-            <Link to='/'>prints</Link>
+            <Link to='/contact'>contact</Link>
+            <Link to='/activities'>activities</Link>
+            <Link to='/prints'>prints</Link>
           </nav>
         </section>
       </header>

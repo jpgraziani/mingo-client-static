@@ -21,9 +21,9 @@ const Footer = () => {
       <div className='footer-nav'>
         <h3>Info</h3>
         <ul>
-          <li><Link>send a message</Link></li>
-					<li><Link>explore activities</Link></li>
-					<li><Link>explore prints</Link></li>
+          <li><Link to='/contact'>contact</Link></li>
+					<li><Link to='/activities'>activities</Link></li>
+					<li><Link to='/prints'>prints</Link></li>
         </ul>
       </div>
 
@@ -31,8 +31,7 @@ const Footer = () => {
         <div className='contact-info'>
           <h3>Connect</h3>
           <p>
-            (719) 235-5080<br />
-					  <Link>info@mingo.com</Link>
+					  info@mingo.com
           </p>
         </div>
         <div className='contact-address'>
