@@ -7,7 +7,6 @@ export default class PrintsPage extends React.Component {
   render() {
 
     const images = [...freeImg]
-    console.log(images)
     return (
       <section className='freeImg-container'>
         {images.map((item, index) => {

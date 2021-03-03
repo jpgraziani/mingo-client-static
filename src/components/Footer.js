@@ -10,8 +10,8 @@ const Footer = () => {
           <p>Sign up for our newsletter to get the latest news, special offers, and event informatio</p>
         
           <div className='email-sign-up'>
-            <form action='#' className='email-form container'>
-              <input type='text' placeholder='email' />
+            <form action="https://formspree.io/f/xzbkrnjz" method="POST" className='email-form container'>
+              <input id='email' name='email' type='text' placeholder='email' required />
               <input type='submit' value='x' />
             </form>
           </div>
@@ -29,12 +29,7 @@ const Footer = () => {
 
       <div className='contact-container'>
         <div className='contact-info'>
-          <h3>Connect</h3>
-          <p>
-					  info@mingo.com
-          </p>
-        </div>
-        <div className='contact-address'>
+          <h3>Current Mood</h3>
           <p>Somwhere in the Sonoran Desert</p>
         </div>
       </div>

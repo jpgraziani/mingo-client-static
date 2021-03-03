@@ -36,7 +36,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.activities)
     const value = {
       activities: this.state.activities
     }
