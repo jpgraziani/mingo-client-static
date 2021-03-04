@@ -9,7 +9,8 @@ import AddActivity from './pages/AddActivityPage'
 import ContactPage from './pages/ContactPage'
 import Footer from './components/Footer'
 import ApiContext from './ApiContext'
-import Store from './data';
+// import Store from './data';
+import config from './config'
 
 import './App.css';
 
@@ -19,7 +20,32 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-   this.setState(Store)
+   fetch(`${config.API_ENDPOINT}/activities`)
+    .then(activitiesResponse => {
+      if (!activitiesResponse.ok)
+      return activitiesResponse.json()
+        .then(e => Promise.reject(e))
+      return activitiesResponse.json()
+    })
+    .then(activities => {
+      this.setState({ activities })
+    })
+    .catch(error => {
+      console.error({ error })
+    })
+  }
+
+  handleAddActivity = (activity) => {
+    this.setState({
+      activities: [...this.state.activities, activity]
+    })
+  }
+
+  handleDeleteActivity = (activityId) => {
+    this.setState({
+      activities: this.state.activities.filter(activity => 
+        activity.id !== activityId)
+    })
   }
 
   renderRoutes() {
@@ -37,7 +63,9 @@ class App extends React.Component {
 
   render() {
     const value = {
-      activities: this.state.activities
+      activities: this.state.activities,
+      AddActivity: this.handleAddActivity,
+      deleteActivity: this.handleDeleteActivity
     }
     return (
       <main>

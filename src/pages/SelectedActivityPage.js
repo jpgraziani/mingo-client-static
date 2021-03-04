@@ -28,7 +28,7 @@ export default class SelectedActivityPage extends React.Component {
             <section>
               <hr />
               <h3>About Activity</h3>
-              {activity.description}
+              {activity.directions}
             </section>
           </div>
         </article>

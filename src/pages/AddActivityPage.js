@@ -12,6 +12,8 @@ class AddActivityPage extends React.Component {
     this.setState({'supply-input': event.target.value})
   }
 
+  
+
   static contextType = ApiContext;
 
   render() {
