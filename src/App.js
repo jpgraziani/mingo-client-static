@@ -35,9 +35,12 @@ class App extends React.Component {
     })
   }
 
-  handleAddActivity = (activity) => {
+  handleAddActivity = activity => {
     this.setState({
-      activities: [...this.state.activities, activity]
+      activities: [
+        ...this.state.activities, 
+        activity
+      ]
     })
   }
 
@@ -64,7 +67,7 @@ class App extends React.Component {
   render() {
     const value = {
       activities: this.state.activities,
-      AddActivity: this.handleAddActivity,
+      addActivity: this.handleAddActivity,
       deleteActivity: this.handleDeleteActivity
     }
     return (
