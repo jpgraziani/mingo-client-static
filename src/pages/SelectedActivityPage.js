@@ -4,7 +4,11 @@ import { findActivity } from '../ActivityHelpers'
 import ApiContext from '../ApiContext'
 
 export default class SelectedActivityPage extends React.Component {
-  render
+  static defaultProps = {
+    match: {
+      params: {}
+    }
+  }
 
   static contextType = ApiContext
 

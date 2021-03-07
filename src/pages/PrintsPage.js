@@ -11,7 +11,7 @@ export default class PrintsPage extends React.Component {
       <section className='freeImg-container'>
         {images.map((item, index) => {
           return (
-            <div className='img-download'>
+            <div className='img-download' key={index}>
               <img key={index} src={item} alt={index} className='img-cover'/>
               <a href={item} download>download</a>
             </div>

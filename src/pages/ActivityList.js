@@ -5,6 +5,11 @@ import ApiContext from '../ApiContext'
 import './ActivityList.css'
 
 export default class ActivityList extends React.Component {
+  static defaultProps = {
+    match: {
+      params: {}
+    }
+  }
 
  static contextType = ApiContext;
 
@@ -20,7 +25,7 @@ export default class ActivityList extends React.Component {
                 <ActivityCard 
                   id={activity.id}
                   name={activity.name}
-                  date={activity.date}
+                  created={activity.created}
                 />
               </li>
             )}

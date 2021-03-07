@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component renders a Title by default 1`] = `
+<div
+  className="section-title"
+>
+  <h2 />
+</div>
+`;

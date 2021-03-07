@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityForm component renders a form.ActivityForm by default 1`] = `
+<form
+  action="#"
+  className="Activity-Form "
+/>
+`;
+
+exports[`ActivityForm component renders the ActivityForm given props 1`] = `
+<form
+  action="#"
+  className="Activity-Form test-class-name"
+  data-other="test-other-prop"
+>
+  <p>
+    test children
+  </p>
+</form>
+`;

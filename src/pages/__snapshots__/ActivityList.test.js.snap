@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityList component renders an ActivityList by default 1`] = `
+<section>
+  <Link
+    className="btns btn-full"
+    to="/add-activity"
+  >
+    Add Activity
+  </Link>
+  <div>
+    <ul
+      className="activities-list"
+    />
+  </div>
+</section>
+`;

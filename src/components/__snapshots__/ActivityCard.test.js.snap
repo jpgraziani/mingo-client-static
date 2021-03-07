@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityCard component renders a .ActivityCard by default 1`] = `
+<section>
+  <div
+    className="activity-card"
+  >
+    <Link
+      to="/activity/undefined"
+    >
+      <h2 />
+      <p />
+    </Link>
+    <button
+      className="btns btn-full"
+      onClick={[Function]}
+      type="button"
+    >
+      remove
+    </button>
+  </div>
+</section>
+`;

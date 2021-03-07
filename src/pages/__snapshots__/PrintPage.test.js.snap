@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrintPage component renders an PrintPage by default 1`] = `
+<section
+  className="freeImg-container"
+>
+  <div
+    className="img-download"
+    key="0"
+  >
+    <img
+      alt={0}
+      className="img-cover"
+      key="0"
+      src="freeDrawingMockupOne.jpg"
+    />
+    <a
+      download={true}
+      href="freeDrawingMockupOne.jpg"
+    >
+      download
+    </a>
+  </div>
+  <div
+    className="img-download"
+    key="1"
+  >
+    <img
+      alt={1}
+      className="img-cover"
+      key="1"
+      src="freeDrawingMockupTwo.jpg"
+    />
+    <a
+      download={true}
+      href="freeDrawingMockupTwo.jpg"
+    >
+      download
+    </a>
+  </div>
+  <div
+    className="img-download"
+    key="2"
+  >
+    <img
+      alt={2}
+      className="img-cover"
+      key="2"
+      src="freeDrawingMockupThree.jpg"
+    />
+    <a
+      download={true}
+      href="freeDrawingMockupThree.jpg"
+    >
+      download
+    </a>
+  </div>
+  <div
+    className="img-download"
+    key="3"
+  >
+    <img
+      alt={3}
+      className="img-cover"
+      key="3"
+      src="freeDrawingMockupFour.jpg"
+    />
+    <a
+      download={true}
+      href="freeDrawingMockupFour.jpg"
+    >
+      download
+    </a>
+  </div>
+</section>
+`;
