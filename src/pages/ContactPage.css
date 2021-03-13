@@ -1,0 +1,103 @@
+.contact-container {
+  background-color: var(--deep-rose);
+  width: 100vw;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  color: var(--white);
+}
+
+.contact-form hr {
+  margin: 0;
+}
+
+.contact-form h2 {
+  padding: 0;
+  margin: 0;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.field-user-email, 
+.field-user-message {
+  margin-top: 3rem;
+}
+
+#user-name, 
+#user-email, 
+#user-message {
+  border: none;
+  border-bottom: 2px solid var(--white);
+  width: 80vw;
+  background: none;
+  color: var(--white);
+  height: 50px;
+}
+
+#user-name {
+  height: 50px;
+}
+
+#user-email {
+  height: 50px;
+}
+
+#user-message {
+  height: 175px;
+}
+.contact-container textarea {
+  resize: none;
+  font-size: 1.5rem;
+  resize: none;
+  
+}
+
+.contact-container textarea::placeholder {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.contact-container input {
+  resize: none;
+  font-size: 1.5rem;
+  resize: none;
+}
+
+.contact-container input::placeholder {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.contact-container button {
+  display: inline-block;
+	margin-top: 3.5rem;
+	margin-right: 1rem;
+	padding: .9rem 1rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+  border: 2px solid var(--white);
+  background: none;
+  color: var(--white);
+}
+
+.contact-container button:hover {
+  border: 2px solid white;
+  background: white;
+  color: var(--deep-rose);
+}
+
+@media (min-width:769px) {
+  #user-name, 
+  #user-email, 
+  #user-message {
+    max-width: 800px; 
+  }
+}

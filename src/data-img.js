@@ -1,8 +1,10 @@
-import freeimg1 from './images/freeDrawingMockupOne.jpg'
-import freeimg2 from './images/freeDrawingMockupTwo.jpg'
-import freeimg3 from './images/freeDrawingMockupThree.jpg'
-import freeimg4 from './images/freeDrawingMockupFour.jpg'
+import paintOnTable from './images/bkgd/pink-paint-on-wood-table.jpg'
+import paperArt from './images/bkgd/wall-art-paper-black-stripes.jpg'
+import yellowCrayon from './images/bkgd/yellow-crayon.jpg'
+import scuba from './images/bkgd/SCUBA.svg'
 
-const freeImg =  [freeimg1, freeimg2, freeimg3, freeimg4];
 
-export default freeImg
+
+const homePageImg = [paintOnTable, paperArt, yellowCrayon, scuba];
+
+export default (homePageImg)

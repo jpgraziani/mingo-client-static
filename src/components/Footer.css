@@ -1,0 +1,143 @@
+/* ---------------------------------- */
+   
+/*  FOOTER  */
+
+/* ---------------------------------- */
+
+.footer-content {
+	background-color: var(--yellow);
+  padding: 2rem 2rem 3.5rem 2.5rem;
+  overflow: hidden;
+}
+
+.footer-content h3 {
+  margin: 0;
+  padding-top:  3rem;
+  color: var(--deep-yellow);
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-container p {
+  margin: 0;
+}
+
+.footer-content p, .contact-container p {
+  color: var(--deep-yellow);
+}
+/*  FOOTER - STAY UPDATED  */
+
+
+.email-link {
+	text-decoration: none;
+	color: var(--deep-yellow);
+}
+
+.email-link:link,
+.email-link:visited {
+	color: var(--deep-yellow);
+}
+
+.email-link:hover{
+	color: #fff;
+}
+
+.footer-mood {
+  grid-column: 2 / 3;
+}
+
+.sign-up {
+	grid-column: 3 / 4;
+	line-height: 1.5;
+	letter-spacing: .1rem;
+  padding-right: 3rem;
+}
+
+#email::placeholder {
+  color: var(--deep-yellow);
+}
+
+@media only screen and (min-width:768px){
+	.footer-grid {
+		display: grid;
+		grid-template-columns: 1.5rem 1fr 1fr 1.5rem;
+	}
+
+  .sign-up {
+    padding-left: 3rem;
+  }
+
+  .email-sign-up {
+		grid-column: 3 / 4;
+    margin-top: 1rem;
+	}
+	
+	.footer-mood {
+		grid-column: 2 / 3;
+    grid-row: 1 / 2;
+	}
+
+  .mountain-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer-content input[type=text], input[type=email] {
+  border: none;
+  border-bottom: 2px solid var(--deep-yellow); 
+  background: none;
+  font-family:  var(--pFont);
+  color: var(--deep-yellow);
+  width: 250px;
+}
+
+.footer-content input[type=text], .footer-email {
+  width: 200px;
+}
+
+@media only screen and (min-width:768px) {
+  .footer-content input[type=text], input[type=email], textarea {
+  width: 315px;
+  }
+
+  .footer-content input[type=text], .footer-email {
+  width: 200px;
+  margin-top: 1rem;
+}
+}
+.footer-content input[type=submit] {
+  background: var(--yellow);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border: 2px solid var(--deep-yellow);
+  padding: .5rem .75rem;
+  font-family:  var(--pFont);
+  font-weight: 600;
+  color: var(--deep-yellow);
+  cursor: pointer;
+}
+
+.footer-content input[type=submit]:hover {
+  border: 2px solid var(--deep-yellow);
+	background-color: var(--deep-yellow);
+	color: var(--white);
+}
+
+.email-label {
+  font-weight: 600;
+  color: var(--deep-yellow);
+  margin-bottom: 1rem;
+}
+

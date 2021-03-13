@@ -74,7 +74,7 @@ class App extends React.Component {
       <main>
         <NavBar />
         <ApiContext.Provider value={value}>
-          {this.renderRoutes()}
+          <section>{this.renderRoutes()}</section>
         </ApiContext.Provider>
         <Footer />
       </main>

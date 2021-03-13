@@ -1,0 +1,107 @@
+.activity-card {
+  background-color: var(--lightBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 375px;
+  width: 340px;
+  transition: all 0.3s ease-out;
+
+}
+
+.activity-card:hover {
+  transform: translateY(-5px) scale(1) translateZ(0);
+}
+
+.title-card {
+  display: flex;
+  width: 320px;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  text-transform: capitalize;
+}
+
+.title-card a:link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.preview-text {
+  padding: 0 1.5rem;
+  font-size:1.5rem;
+  width:320px;
+  
+  /** Properties **/
+  overflow:hidden;
+  line-height: 2rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+.activity-card h2 {
+  color: var(--primary);
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.activity-card p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--primary);
+}
+
+.activity-card textarea::placeholder {
+  color: rgba(250, 250, 250, .6);
+}
+
+.activity-card .hr {
+  width: 90%;
+  margin-bottom: 1rem;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.activity-card .lower-hr {
+  height: 1.5px;
+}
+.click-card-container {
+  display: flex;
+}
+
+.activity-card-btn {
+  display: inline-block;
+	margin-top: 1.5rem;
+	margin-right: 1rem;
+	padding: .9rem 1rem;
+	text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+  width: 105px;
+}
+
+.input-btn {
+  background: none;
+  border: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.activity-card-btn:link,
+.activity-card-btn:visited {
+	border: 2px solid var(--primary);
+	color: var(--primary);
+}
+
+.activity-card-btn:hover{
+	border: 2px solid var(--medBlue);
+	background-color: var(--medBlue);
+	color: var(--white);
+}

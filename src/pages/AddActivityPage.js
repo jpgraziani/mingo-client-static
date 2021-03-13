@@ -3,6 +3,8 @@ import ActivityForm from '../components/ActivityForm'
 import config from '../config'
 import ApiContext from '../ApiContext'
 
+import './AddActivityPage.css'
+
 class AddActivityPage extends React.Component {
   constructor(props) {
     super(props);
@@ -54,31 +56,41 @@ class AddActivityPage extends React.Component {
 
   render() {
     return (
-      <article>
-        <ActivityForm onSubmit={this.handleSubmit}>
+      <article className='add-activity-container'>
+        <ActivityForm onSubmit={this.handleSubmit} className='activity-form'>
           <section className='field'>
             <label htmlFor='activity-name-input'>
-              <h4>Activity Name</h4>
+              <span className='max-ct'>*max 27 characters</span>
+              <h2>Activity Name</h2>
             </label>
-            <hr />
-            <input type='text' id='activity-name-input' name='activity-name-input' required />
+            
+            <textarea 
+              type='text' 
+              id='activity-name-input' name='activity-name-input'
+              placeholder='enter name' 
+              maxLength="27"
+              required />
           </section>
-          <section className='field'>
+          <section className='field-supplies'>
             <label htmlFor='supply-input'>
-              <h4>Supplies</h4>
+              <h2>Supplies</h2>
             </label>
-            <hr />
-            <textarea type='text' id='supply-input' name='supply-input' value={this.state['supply-input']} onChange={this.handleChange} />
+            
+            <textarea type='text' id='supply-input' name='supply-input' 
+            value={this.state['supply-input']} onChange={this.handleChange} 
+            required />
           </section>
-          <section className='field'>
+         
+          <section className='field-description'>
             <label htmlFor='aboutActivity-input'>
-              <h4>About Activity</h4>
+              <h2>About Activity</h2>
             </label>
-            <hr />
-            <textarea type='text' id='aboutActivity-input' name='aboutActivity-input'  required/>
+            <textarea type='text' id='aboutActivity-input' name='aboutActivity-input'
+            placeholder='enter description'
+            required /> 
           </section>
           <div className='buttons'>
-            <button type='submit' className='btns btn-full'>
+            <button type='submit' className='sub-btn'>
               Add Activity
             </button>
           </div>

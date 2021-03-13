@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import ApiContext from '../ApiContext'
 import config from '../config'
+import './ActivityCard.css'
+// import { format } from 'date-fns'
 
 export default class ActivityCard extends React.Component {
   static defaultProps = {
@@ -36,21 +38,34 @@ export default class ActivityCard extends React.Component {
   }
 
   render() {
-    const { name, id, date } = this.props
+    const { name, id, directions  } = this.props
     return (
       <section>
-        <div className='activity-card'>
-          <Link to={`/activity/${id}`}>
-            <h2>{name}</h2>
-            <p>{date}</p>
-          </Link>
-          <button
-            className='btns btn-full'
-            type='button'
-            onClick={this.handleDelete}
-          >
-            remove
-          </button>
+        <div className='activity-card card'>
+          <div className='hr' />
+          <div className='title-card'>
+            <h2 className='title-text'>{name}</h2>
+          </div>
+          <div className='hr lower-hr' />
+          <div className='preview-card hidden'>
+            <p className='preview-text'>{directions}</p>
+          </div>
+
+          <div className='click-card-container'>
+            <div >
+              <Link to={`/activity/${id}`} className='activity-card-btn act-link'>
+                read me 
+              </Link>
+            </div>
+            <div>
+              <input
+                className='activity-card-btn input-btn'
+                type='button'
+                onClick={this.handleDelete}
+                value='delete'
+              />
+            </div> 
+          </div>
         </div>
       </section>
     );

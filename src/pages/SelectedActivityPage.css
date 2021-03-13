@@ -1,0 +1,89 @@
+.single-activity {
+  background-color: var(--lightBlue);
+  color: var(--primary);
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.single-activity-info {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.activity-title {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+
+.directions, .supplies {
+  white-space: pre-line;
+  flex: 1;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.activity-title h2 {
+  margin-bottom: .25rem;
+}
+
+.activity-title h2, .directions h3, .supplies h3 {
+  color: var(--primary);
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.activity-title h3 {
+  margin-top: 0;
+}
+
+.supplies {
+  width: 80vw;
+  margin: 0 auto 3rem auto;
+}
+
+.hr {
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.lower {
+  height: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.single-activity .back-btn {
+  margin-right: 1rem;
+  display: inline-block;
+	padding: .9rem 1rem;
+	text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+  border: 2px solid var(--white);
+  background: none;
+  color: var(--white);
+}
+
+.single-activity .back-btn:hover {
+  border: 2px solid white;
+  background: white;
+  color: var(--primary);
+}
+
+.back-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width:769px) {
+	.single-activity-info {
+		flex-direction: row;
+    flex-wrap: wrap;
+	}
+}

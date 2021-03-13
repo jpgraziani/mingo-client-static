@@ -1,0 +1,94 @@
+.add-activity-container {
+  background-color: var(--deep-rose);
+  width: 100vw;
+}
+
+.activity-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  color: var(--white);
+}
+
+.activity-form hr {
+  margin: 0;
+}
+
+.add-activity-container h2 {
+  padding: 0;
+  margin: 0;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.max-ct {
+  font-size: 1.5rem;
+}
+
+.field-supplies, 
+.field-description {
+  margin-top: 3rem;
+}
+
+#activity-name-input, 
+#supply-input, 
+#aboutActivity-input {
+  border: none;
+  border-bottom: 2px solid var(--white);
+  width: 80vw;
+  background: none;
+  color: var(--white);
+  height: 50px;
+}
+
+#supply-input {
+  height: 100px;
+}
+
+#aboutActivity-input {
+  height: 175px;
+}
+
+.add-activity-container textarea {
+  resize: none;
+  font-size: 1.5rem;
+  overflow-y:inherit;
+}
+
+.add-activity-container textarea::placeholder {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.add-activity-container button {
+  display: inline-block;
+	margin-top: 3.5rem;
+	margin-right: 1rem;
+	padding: .9rem 1rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+  border: 2px solid var(--white);
+  background: none;
+  color: var(--white);
+}
+
+.add-activity-container button:hover {
+  border: 2px solid white;
+  background: white;
+  color: var(--deep-rose);
+}
+
+@media (min-width:769px) {
+  #activity-name-input, 
+  #supply-input, 
+  #aboutActivity-input {
+    max-width: 800px; 
+  }
+}
