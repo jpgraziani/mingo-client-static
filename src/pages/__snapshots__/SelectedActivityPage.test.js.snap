@@ -1,31 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SelectedActivityPage component renders a SelectedActivityPage by default 1`] = `
-<Fragment>
-  <article
-    className="single-activity"
+<article
+  className="single-activity"
+>
+  <div
+    className="single-activity-info"
   >
-    <div
-      className="single-activity-info"
+    <section
+      className="activity-title"
     >
-      <section>
-        <h3 />
-      </section>
-      <section
-        className="desc"
+      <h2 />
+    </section>
+    <div
+      className="back-container"
+    >
+      <Link
+        className="back-btn"
+        to="/activities"
       >
-        <hr />
-        <h3>
-          Supplies
-        </h3>
-      </section>
-      <section>
-        <hr />
-        <h3>
-          About Activity
-        </h3>
-      </section>
+        previous
+      </Link>
+      <Link
+        className="back-btn"
+        to="/add-activity"
+      >
+        add activity
+      </Link>
     </div>
-  </article>
-</Fragment>
+    <section
+      className="supplies"
+    >
+      <div
+        className="hr"
+      />
+      <h3>
+        Supplies
+      </h3>
+      <div
+        className="hr lower"
+      />
+      <p />
+    </section>
+    <section
+      className="directions"
+    >
+      <div
+        className="hr"
+      />
+      <h3>
+        About Activity
+      </h3>
+      <div
+        className="hr lower"
+      />
+      <p />
+    </section>
+  </div>
+</article>
 `;

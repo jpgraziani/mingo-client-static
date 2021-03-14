@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AddActivityPage component renders an AddActivityPage by default 1`] = `
-<article>
+<article
+  className="add-activity-container"
+>
   <ActivityForm
+    className="activity-form"
     onSubmit={[Function]}
   >
     <section
@@ -11,51 +14,57 @@ exports[`AddActivityPage component renders an AddActivityPage by default 1`] = `
       <label
         htmlFor="activity-name-input"
       >
-        <h4>
+        <span
+          className="max-ct"
+        >
+          *max 27 characters
+        </span>
+        <h2>
           Activity Name
-        </h4>
+        </h2>
       </label>
-      <hr />
-      <input
+      <textarea
         id="activity-name-input"
+        maxLength="27"
         name="activity-name-input"
+        placeholder="enter name"
         required={true}
         type="text"
       />
     </section>
     <section
-      className="field"
+      className="field-supplies"
     >
       <label
         htmlFor="supply-input"
       >
-        <h4>
+        <h2>
           Supplies
-        </h4>
+        </h2>
       </label>
-      <hr />
       <textarea
         id="supply-input"
         name="supply-input"
         onChange={[Function]}
+        required={true}
         type="text"
         value="None, just have fun."
       />
     </section>
     <section
-      className="field"
+      className="field-description"
     >
       <label
         htmlFor="aboutActivity-input"
       >
-        <h4>
+        <h2>
           About Activity
-        </h4>
+        </h2>
       </label>
-      <hr />
       <textarea
         id="aboutActivity-input"
         name="aboutActivity-input"
+        placeholder="enter description"
         required={true}
         type="text"
       />
@@ -64,7 +73,7 @@ exports[`AddActivityPage component renders an AddActivityPage by default 1`] = `
       className="buttons"
     >
       <button
-        className="btns btn-full"
+        className="sub-btn"
         type="submit"
       >
         Add Activity

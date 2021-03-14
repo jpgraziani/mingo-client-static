@@ -12,14 +12,18 @@ exports[`PrintPage component renders an PrintPage by default 1`] = `
       alt={0}
       className="img-cover"
       key="0"
-      src="freeDrawingMockupOne.jpg"
+      src="deep-diver-color.png"
     />
-    <a
-      download={true}
-      href="freeDrawingMockupOne.jpg"
+    <div
+      className="download-btn"
     >
-      download
-    </a>
+      <a
+        download={true}
+        href="deep-diver-color.png"
+      >
+        download
+      </a>
+    </div>
   </div>
   <div
     className="img-download"
@@ -29,14 +33,18 @@ exports[`PrintPage component renders an PrintPage by default 1`] = `
       alt={1}
       className="img-cover"
       key="1"
-      src="freeDrawingMockupTwo.jpg"
+      src="fisherman.png"
     />
-    <a
-      download={true}
-      href="freeDrawingMockupTwo.jpg"
+    <div
+      className="download-btn"
     >
-      download
-    </a>
+      <a
+        download={true}
+        href="fisherman.png"
+      >
+        download
+      </a>
+    </div>
   </div>
   <div
     className="img-download"
@@ -46,31 +54,18 @@ exports[`PrintPage component renders an PrintPage by default 1`] = `
       alt={2}
       className="img-cover"
       key="2"
-      src="freeDrawingMockupThree.jpg"
+      src="viking.png"
     />
-    <a
-      download={true}
-      href="freeDrawingMockupThree.jpg"
+    <div
+      className="download-btn"
     >
-      download
-    </a>
-  </div>
-  <div
-    className="img-download"
-    key="3"
-  >
-    <img
-      alt={3}
-      className="img-cover"
-      key="3"
-      src="freeDrawingMockupFour.jpg"
-    />
-    <a
-      download={true}
-      href="freeDrawingMockupFour.jpg"
-    >
-      download
-    </a>
+      <a
+        download={true}
+        href="viking.png"
+      >
+        download
+      </a>
+    </div>
   </div>
 </section>
 `;

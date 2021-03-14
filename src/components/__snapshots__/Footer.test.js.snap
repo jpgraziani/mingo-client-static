@@ -14,7 +14,7 @@ exports[`Footer Component renders a Footer by default 1`] = `
         Stay Updated
       </h3>
       <p>
-        Sign up for our newsletter to get the latest news, special offers, and event informatio
+        Sign up for our newsletter to get the latest news, special offers, and event information
       </p>
       <div
         className="email-sign-up"
@@ -24,7 +24,15 @@ exports[`Footer Component renders a Footer by default 1`] = `
           className="email-form container"
           method="POST"
         >
+          <label
+            className="email-label"
+            htmlFor="email"
+          >
+            Say Hello!
+          </label>
+          <br />
           <input
+            className="footer-email"
             id="email"
             name="email"
             placeholder="email"
@@ -32,56 +40,88 @@ exports[`Footer Component renders a Footer by default 1`] = `
             type="text"
           />
           <input
+            id="img-btn"
             type="submit"
-            value="x"
+            value="submit"
           />
         </form>
       </div>
     </div>
-  </div>
-  <div
-    className="footer-nav"
-  >
-    <h3>
-      Info
-    </h3>
-    <ul>
-      <li>
-        <Link
-          to="/contact"
-        >
-          contact
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/activities"
-        >
-          activities
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/prints"
-        >
-          prints
-        </Link>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="contact-container"
-  >
     <div
-      className="contact-info"
+      className="footer-mood"
     >
       <h3>
-        Current Mood
+        Current Mood & Location
       </h3>
       <p>
-        Somwhere in the Sonoran Desert
+        Sonoran Desert Sunset
       </p>
     </div>
   </div>
+  <section
+    className="mountain-container"
+  >
+    <div
+      className="bg"
+    >
+      <div
+        className="mountain"
+      >
+        <div
+          className="mountain-top"
+        >
+          <div
+            className="mountain-cap-1"
+          />
+          <div
+            className="mountain-cap-2"
+          />
+          <div
+            className="mountain-cap-3"
+          />
+        </div>
+      </div>
+      <div
+        className="mountain-two"
+      >
+        <div
+          className="mountain-top"
+        >
+          <div
+            className="mountain-cap-1"
+          />
+          <div
+            className="mountain-cap-2"
+          />
+          <div
+            className="mountain-cap-3"
+          />
+        </div>
+      </div>
+      <div
+        className="mountain-three"
+      >
+        <div
+          className="mountain-top"
+        >
+          <div
+            className="mountain-cap-1"
+          />
+          <div
+            className="mountain-cap-2"
+          />
+          <div
+            className="mountain-cap-3"
+          />
+        </div>
+      </div>
+      <div
+        className="cloud"
+      />
+      <div
+        className="cloud-two"
+      />
+    </div>
+  </section>
 </section>
 `;

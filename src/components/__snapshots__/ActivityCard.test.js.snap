@@ -3,21 +3,48 @@
 exports[`ActivityCard component renders a .ActivityCard by default 1`] = `
 <section>
   <div
-    className="activity-card"
+    className="activity-card card"
   >
-    <Link
-      to="/activity/undefined"
+    <div
+      className="hr"
+    />
+    <div
+      className="title-card"
     >
-      <h2 />
-      <p />
-    </Link>
-    <button
-      className="btns btn-full"
-      onClick={[Function]}
-      type="button"
+      <h2
+        className="title-text"
+      />
+    </div>
+    <div
+      className="hr lower-hr"
+    />
+    <div
+      className="preview-card hidden"
     >
-      remove
-    </button>
+      <p
+        className="preview-text"
+      />
+    </div>
+    <div
+      className="click-card-container"
+    >
+      <div>
+        <Link
+          className="activity-card-btn act-link"
+          to="/activity/undefined"
+        >
+          read me
+        </Link>
+      </div>
+      <div>
+        <input
+          className="activity-card-btn input-btn"
+          onClick={[Function]}
+          type="button"
+          value="delete"
+        />
+      </div>
+    </div>
   </div>
 </section>
 `;
